@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+    background-color: #E2CEB3;
+}
+
+.tam-menu-lateral {
+    min-width: 100px;
+    min-height: 500px;
+}
+
+.alinhamento-texto {
+  text-align: left;
+  font-size: medium;
+  margin-top: 50px;
+}
+.alinhamento-texto  h1{
+  font-size: 40px;
+  color: #525252;
+}
+
+.main-container {
+  text-align: center;
+  font-size: large;
+  background-image: url('bg_img.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: right ;
+  height: 100vh;
+  width: 100%;
+}
+
+.footer-container {
+  background-color: #DFCAAF;
+  box-sizing: border-box;
+  padding: 4vh;
+  color: white;
+  border-top: 2px solid none;
+}
+
+/* ICONE DO WHATSAPP */
+
+.zap {
+    height: 64px; 
+    position: fixed; 
+    bottom: 2vh; 
+    right: 3vh;
+    z-index: 99999;
+}
+
+/* ESTILOS DO MENU LATERAL */
+span #breve{
+  font-size: 0.7rem;
+  color: white;
+}
+
+.navigation {
+    position: relative;
+    height: 100vh;
+    background-color: #A3692F;
+    width: 60px;
+    margin-left: -12px;
+    margin-top: -50px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .navbar-brand {
+    margin-right: auto;
+    margin-left: 65px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navigation:hover {
+    width: 240px;
+    color: white;
+  }
+
+  .navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+  }
+  
+  .navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+   
+  }
+  
+  .navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+
+  }
+  
+  .navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: left;
+    line-height: 70px;
+    margin-left: 13px;
+  }
+  
+  .navigation ul li a .icon ion-icon {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  
+  .navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding-left: 0px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    margin-left: -14px;
+  }
+  
+  .navigation ul li.active {
+    background-color: #E2CEB3;
+  }
+    
+  .navigation ul li.active a .icon {
+    color: #A3692F;
+  }
+  
+  .navigation ul li.active a .title {
+    color: #A3692F;
+  }
+   
+/* stylos da Solicitacao de javacript */
+
+.resposta {
+  color: #525252;
+}
+
+.resposta input {
+  display: block;
+  border: 2px solid #c0bebe;
+  border-radius: 12px;
+  height: 7vh;
+  width: 35vh;
+  margin-top: 3vh;
+}
+
+/*sumir com arrows do input */
+.resposta input::-webkit-outer-spin-button,
+.resposta input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.resposta input::placeholder{
+  color: #A3692F;
+  padding-left: 3vh;
+}
+.resposta input:focus::placeholder {
+  color: transparent;
+}
+
+.resposta input:focus {
+  border: none;
+  outline: none;
+  border: 2px solid #A3692F;
+}
+
+.resposta button{
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  width: 20vh;
+  height: 8vh;
+    
+  margin-top: 3vh;
+  background: #A3692F;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  z-index: 0;
+}
+
+/* Stilos da resposta do JavaScript */
+
+.container-resp {
+  border: 2px solid #A3692F;
+  border-radius: 12px;
+  margin-top: 3vh;
+  width: 80vh;
+  height: auto;
+  background-color: white;
+
+}
+
+.texto-resposta {
+  display: block;
+  color: #525252;
+  margin: 1rem;
+
+}
+
+.text-footer {
+  color: #A3692F;
+}
+
+.text-footer a{
+  color: #A3692F;
+}
