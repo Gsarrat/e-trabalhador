@@ -1,149 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 body {
     background-color: #E2CEB3;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.tam-menu-lateral {
-    min-width: 100px;
-    min-height: 500px;
+/*Menu Superior*/
+header{
+  height: 10vh;
+  width: 100%;
+  background-color: white;
 }
 
-.alinhamento-texto {
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5vw;
+
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem;
+  color: #A3692F;
+}
+
+.logo {
+  color: black;
+  margin-left: 4vw;
+  font-size:  3vh;
+}
+.logo span {
+  font-weight: bold;
+}
+
+/*Menu Lateral*/
+.navigation {
+  position: relative;
+  display: inline-flex;
+  height: 100vh;
+  background-color: #A3692F;
+  width: 3.5vw;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  
+}
+
+nav {
+  display: block;
+}
+
+.navigation:hover {
+  width: 17vw;      
+  color: white;
+}
+
+.navigation ul {
+  width: 100vh;
+  padding-left: 0vh;
+  padding-top: 0vh;
+  padding-right: 0vh;
+  margin-top: 0vh;
+}
+
+.navigation ul li {
+
+  list-style: none;
+  width: 100%;
+
+}
+
+.navigation ul li a {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  margin-top: 3vh;
+}
+
+.navigation ul li a .icon {
+  min-width: 1vw;
+  height: 1vw;
   text-align: left;
-  font-size: medium;
-  margin-top: 50px;
-}
-.alinhamento-texto  h1{
-  font-size: 40px;
-  color: #525252;
+  line-height: 3vh;
+  margin-left: 1vw;
 }
 
+.navigation ul li a .icon ion-icon {
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.navigation ul li a .title {
+  padding-left: 0vh;
+  height: 7vh;
+  line-height: 3vh;
+  white-space: nowrap;
+  margin-left: 1.5vw;
+}
+
+.navigation ul li.active {
+  background-color: #E2CEB3;
+}
+  
+.navigation ul li.active a .icon {
+  color: #A3692F;
+  margin-top: 10%;
+}
+
+.navigation ul li.active a .title {
+  color: #A3692F;
+  margin-top: 10%;
+}
+
+.menu-lateral {
+  display: inline-flex;
+  min-width: 20vw; /*<-------linha para andar com o menu empurrando a tela*/
+  min-height: 80vh;
+  vertical-align: top;
+}
+
+/* estilos do conteudo principla*/
 .main-container {
-  text-align: center;
+  display: inline-flex;
+  text-align: left;
   font-size: large;
   background-image: url('bg_img.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: right ;
   height: 100vh;
-  width: 100%;
+  width: 94vw;
+  margin-left: -16.5vw;
 }
 
-.footer-container {
-  background-color: #DFCAAF;
-  box-sizing: border-box;
-  padding: 4vh;
-  color: white;
-  border-top: 2px solid none;
-}
-
-/* ICONE DO WHATSAPP */
-
-.zap {
-    height: 64px; 
-    position: fixed; 
-    bottom: 2vh; 
-    right: 3vh;
-    z-index: 99999;
-}
-
-/* ESTILOS DO MENU LATERAL */
-span #breve{
-  font-size: 0.7rem;
-  color: white;
-}
-
-.navigation {
-    position: relative;
-    height: 100vh;
-    background-color: #A3692F;
-    width: 60px;
-    margin-left: -12px;
-    margin-top: -50px;
-    overflow-x: hidden;
-    transition: 0.5s;
-    z-index: 1;
-  }
-  
-  .navbar-brand {
-    margin-right: auto;
-    margin-left: 65px;
-  }
-  
-  .navbar-nav {
-    margin-left: auto;
-  }
-
-  .navigation:hover {
-    width: 240px;
-    color: white;
-  }
-
-  .navigation ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    margin-top: 0px;
-  }
-  
-  .navigation ul li {
-    position: relative;
-    list-style: none;
-    width: 100%;
-   
-  }
-  
-  .navigation ul li a {
-    position: relative;
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: white;
-
-  }
-  
-  .navigation ul li a .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    text-align: left;
-    line-height: 70px;
-    margin-left: 13px;
-  }
-  
-  .navigation ul li a .icon ion-icon {
-    position: relative;
-    font-size: 1.5rem;
-    z-index: 1;
-  }
-  
-  .navigation ul li a .title {
-    position: relative;
-    display: block;
-    padding-left: 0px;
-    height: 60px;
-    line-height: 60px;
-    white-space: nowrap;
-    margin-left: -14px;
-  }
-  
-  .navigation ul li.active {
-    background-color: #E2CEB3;
-  }
-    
-  .navigation ul li.active a .icon {
-    color: #A3692F;
-  }
-  
-  .navigation ul li.active a .title {
-    color: #A3692F;
-  }
-   
 /* stylos da Solicitacao de javacript */
 
 .resposta {
@@ -152,18 +156,11 @@ span #breve{
 
 .resposta input {
   display: block;
-  border: 2px solid #c0bebe;
-  border-radius: 12px;
+  border: 0.4vh solid #c0bebe;
+  border-radius: 1.5vh;
   height: 7vh;
   width: 35vh;
   margin-top: 3vh;
-}
-
-/*sumir com arrows do input */
-.resposta input::-webkit-outer-spin-button,
-.resposta input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .resposta input::placeholder{
@@ -190,17 +187,16 @@ span #breve{
   margin-top: 3vh;
   background: #A3692F;
   border: none;
-  border-radius: 12px;
+  border-radius: 1.5vh;
   color: white;
   font-weight: 500;
   z-index: 0;
 }
 
 /* Stilos da resposta do JavaScript */
-
 .container-resp {
-  border: 2px solid #A3692F;
-  border-radius: 12px;
+  border: 0.4vh solid #A3692F;
+  border-radius: 1.5vh;
   margin-top: 3vh;
   width: 80vh;
   height: auto;
@@ -215,10 +211,115 @@ span #breve{
 
 }
 
+/*sumir com arrows do input */
+.resposta input::-webkit-outer-spin-button,
+.resposta input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.alinhamento-texto {
+  text-align: center;
+  font-size: medium;
+  margin-top: 10vh;
+  vertical-align: top;
+}
+.alinhamento-texto {
+  margin-left: 2rem;
+}
+
+.alinhamento-texto h1 {
+  font-size: 2rem;
+  color: #525252;
+  margin-bottom: 2rem;
+}
+
+.alinhamento-texto p {
+  margin-left: 2rem;
+}
+
+.footer-container {
+  display: block;
+  background-color: #DFCAAF;
+  box-sizing: border-box;
+  padding: 4vh;
+  color: white;
+}
+
 .text-footer {
   color: #A3692F;
 }
 
 .text-footer a{
   color: #A3692F;
+}
+
+
+/* ICONE DO WHATSAPP */
+
+.zap {
+    height: 70px; 
+    position: fixed; 
+    bottom: 2vh; 
+    right: 3vh;
+    z-index: 99999;
+}
+
+/* Stilos Mobille */
+
+@media (max-width: 700px) {
+
+  .main-container {
+    background: none;
+  }
+
+  .alinhamento-texto  h1 {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  .alinhamento-texto  p {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  /*Menu Superior*/
+  header {
+    height: 7vh;
+    display: flex;
+  }
+  
+  .logo {
+    font-size: 2vh;
+    margin-left: 2vw;
+  }
+
+  /*menu lateral responsivo*/
+  .navigation {
+    height: 100vh;
+    width: 9vw;
+  }
+
+  .navigation:hover {
+    width: 80vw;      
+  }
+
+  /* Stilos da resposta do JavaScript */
+  .container-resp {
+    width: 32vh;
+    height: auto;
+  }
+
+  .zap {
+
+    position: fixed; 
+    bottom: 2vh; 
+    right: 3vh;
+    z-index: 99999;
+
+  }
+  
 }

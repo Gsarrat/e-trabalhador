@@ -4,101 +4,85 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>E-Trabalhador</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
   </head>   
   <body>
-    <!-- aqui comeca o codigo do menu de cima-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><b>E</b>-Trabalhador</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Menu Superior-->
+    <header>
+      <nav>
+        <span class="logo" href="#"><span>E</span>-Trabalhador</span>
+        <ul>
+          <li><a class="top-lin" href="index.html">Home</a></li>
+          <li><a class="top-lin" href="#">Sobre</a></li>
+          <li><a class="top-lin" href="#">Contato</a></li>
+        </ul>
       </nav>
-      <!-- aqui acaba o codigo do menu de cima-->
+    </header>    
+    <!-- aqui acaba o codigo do menu de cima-->
 
+    <!-- aqui COMECA o codigo do menu lateral-->  
+    <div class="menu-lateral"> 
+        <nav class="navigation">
+          <ul>
+              <li class="list">
+                  <a href="#" class=""  href="#" id="opcao1">
+                      <span class="icon"><ion-icon name="trending-up-outline"></ion-icon></span>
+                      <span class="title">Aumento Salarial</span>
+                  </a>                    
+              </li>
+              <li class="list">
+                  <a href="#" class=""  href="#" id="opcao2">
+                      <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                      <span class="title">Saldo Salarial</span>
+                  </a>                    
+              </li>
+              <li class="list">
+                  <a href="#" class=""  href="#" id="opcao3">
+                      <span class="icon"><ion-icon name="trending-down-outline"></ion-icon></span>
+                      <span class="title">Descontos Folha</span>
+                  </a>                    
+              </li>
+              <li class="list">
+                  <a href="#" class=""  href="#" id="opcao4">
+                      <span class="icon"><ion-icon name="ban-outline"></ion-icon></span>
+                      <span class="title">CLT X PJ <span id="breve">(em breve)</span></span>
+                  </a>                    
+              </li>
+              <li class="list">
+                  <a href="#" class=""  href="#" id="opcao5">
+                      <span class="icon"><ion-icon name="ban-outline"></ion-icon></span>
+                      <span class="title">Gerador de Folha <span id="breve">(em breve)</span></span>
+                  </a>                    
+              </li>
+          </ul>
+  
+      </nav>
+    </div>
+    <!-- aqui ACABA o codigo do menu lateral-->
 
-    <div class="container-fluid main-container">
-        <div class="row">
-            <div class="col-lg-1">
-                <!-- aqui COMECA o codigo do menu lateral-->  
-                <div class="tam-menu-lateral alinhamento-texto"> 
-                    <nav class="navigation">
-                      <ul>
-                          <li class="list">
-                              <a href="#" class="mb-1 col-12 flex-fill texts-center nav-link active"  href="#" id="opcao1">
-                                  <span class="icon"><ion-icon name="trending-up-outline"></ion-icon></span>
-                                  <span class="title">Aumento Salarial</span>
-                              </a>                    
-                          </li>
-                          <li class="list">
-                              <a href="#" class="mb-1 col-12 flex-fill texts-center nav-link active"  href="#" id="opcao2">
-                                  <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
-                                  <span class="title">Saldo Salarial</span>
-                              </a>                    
-                          </li>
-                          <li class="list">
-                              <a href="#" class="mb-1 col-12 flex-fill texts-center nav-link active"  href="#" id="opcao3">
-                                  <span class="icon"><ion-icon name="trending-down-outline"></ion-icon></span>
-                                  <span class="title">Descontos Folha</span>
-                              </a>                    
-                          </li>
-                          <li class="list">
-                              <a href="#" class="mb-1 col-12 flex-fill texts-center nav-link active"  href="#" id="opcao4">
-                                  <span class="icon"><ion-icon name="ban-outline"></ion-icon></span>
-                                  <span class="title">CLT X PJ <span id="breve">(em breve)</span></span>
-                              </a>                    
-                          </li>
-                          <li class="list">
-                              <a href="#" class="mb-1 col-12 flex-fill texts-center nav-link active"  href="#" id="opcao5">
-                                  <span class="icon"><ion-icon name="ban-outline"></ion-icon></span>
-                                  <span class="title">Gerador de Folha <span id="breve">(em breve)</span></span>
-                              </a>                    
-                          </li>
-                      </ul>
-              
-                  </nav>
-                </div>
-                <!-- aqui ACABA o codigo do menu lateral-->
-            </div>
-            <div class="col-lg-9">
-                <div class="alinhamento-texto " id="conteudo">
-                  <H1>Bem-Vindo ao E-Trabalhador</H1>
-                  <P>Esperamos poder ajuda-lo com diversos calculos trabalhistas...</P>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="alinhamento-texto"></div>
-            </div>
+    <!-- Corpo do site-->
+    <div class="main-container">
+        <div class="alinhamento-texto " id="conteudo">
+          <H1>Bem-Vindo ao E-Trabalhador</H1>
+          <P>Esperamos poder ajuda-lo com diversos calculos trabalhistas...</P>
         </div>
     </div>
+
+    <!-- area da propaganda (nao implementada)-->    
+
+
+    <!-- icone do whatsapp-->    
     <div>
-      <a href="https://api.whatsapp.com/send?phone=5521974704371&text=Texto%20aqui" target="_blank">
-      <img src="https://i.imgur.com/ryESuZ5.png" data-selector="img" class="zap"></a>
+      <a href="https://api.whatsapp.com/send?phone=5521974704371&amp;text=Texto%20aqui" target="_blank">
+        <img src="https://i.imgur.com/ryESuZ5.png" data-selector="img" class="zap"></a>
     </div>
 
-    <!-- aqui ACABA o codigo do menu lateral-->
-    <footer class="container-fluid footer-container">
+    <!-- footer do site -->
+    <footer class="footer-container">
       <span class="text-footer">E-trabalhador by <a href="https://www.linkedin.com/in/gabriel-sarrat-3802b2164/">Gabriel Sarrat</a></span>
     </footer>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
